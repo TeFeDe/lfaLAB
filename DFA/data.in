@@ -1,0 +1,41 @@
+[State]
+q0
+q1
+q2
+q3
+q4
+q5
+[Start_State]
+q0
+[Accept_States]
+q5
+[Symbols]
+w
+a
+s
+d
+[Rules]
+q0, w, q1
+q0, a, q0
+q0, s, q0
+q0, d, q0
+q1, w, q2
+q1, a, q3
+q1, s, q0
+q1, d, q4
+q2, w, q2
+q2, a, q2
+q2, s, q1
+q2, d, q2
+q3, w, q3
+q3, a, q3
+q3, s, q3
+q3, d, q2
+q4, w, q4
+q4, a, q2
+q4, s, q5
+q4, d, q4
+[Tests]
+wds
+wwwwwwwwsd
+wasd
