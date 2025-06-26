@@ -131,7 +131,7 @@ void validate(const Data& d) {
 
 int main() {
     try {
-        Data d = citire("joc2.in");
+        Data d = citire("data.in");
         validate(d);
     } catch (const exception& ex) {
         cerr << "Error: " << ex.what() << endl;
