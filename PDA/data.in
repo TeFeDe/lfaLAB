@@ -1,0 +1,23 @@
+STATES: q0,q1,q2
+
+INPUT_ALPHABET: a,b
+
+STACK_ALPHABET: Z,A
+
+INITIAL_STATE: q0
+
+INITIAL_STACK_SYMBOL: Z
+
+FINAL_STATES: q2
+
+TRANSITIONS:
+
+(q0,a,Z) -> (q0,AZ)
+
+(q0,a,A) -> (q0,AA)
+
+(q0,b,A) -> (q1,ε)
+
+(q1,b,A) -> (q1,ε)
+
+(q1,ε,Z) -> (q2,Z)
